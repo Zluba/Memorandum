@@ -1,0 +1,38 @@
+<resources>
+
+    <string name="app_name">Memo</string>
+
+    <string name="title_activity_add_alarm">添加备忘</string>
+    <string name="title_activity_edit_alarm">编辑</string>
+    <string name="title_activity_about">关于</string>
+    <string name="title_activity_finish">退出</string>
+    <string name="add_alarm"> 请再此输入备忘 </string>
+    <string name="details">设置提醒</string>
+    <string name="date">Date</string>
+    <string name="time">提醒时间</string>
+    <string name="repeat">周期</string>
+    <string name="repeat_off">Off</string>
+    <string name="wake_method">方式</string>
+    <string name="repeat_type">Type of Repetitions</string>
+    <string name="action_discard_alarm">Discard Alarm</string>
+    <string name="action_save_alarm">Save Alarm</string>
+    <string name="no_alarm">点击 + 添加备忘录</string>
+    <string name="popup_menu_edit">编辑</string>
+    <string name="popup_menu_delete">删除</string>
+    <string name="popup_menu_more">期待更多</string>
+    <string name="shengming">"     </string>
+    <string name="app_name_ver">备忘录</string>
+    <string name="email">邮箱：</string>
+    <string name="emali_adress">" tianshu.shao@foxmail.com"</string>
+    <string name="github_adress">" github.com/"</string>
+    <string name="ring_type">响铃方式</string>
+    <string name="calculate_name"></string>
+    <string name="ca_details"></string>
+    <string name="ca_set">点我设置</string>
+    <string name="question">自定义问题</string>
+
+    <string name="que_set">点我设置</string>
+    <string name="que_sure">确定并保存</string>
+    <string name="que_can">取消</string>
+    <string name="alarm_complete">闹钟时间到</string>
+</resources>

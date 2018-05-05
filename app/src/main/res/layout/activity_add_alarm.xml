@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="?attr/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/add_reminder_layout_top"
+        android:background="@color/mdtp_white"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/alarm_title"
+            android:layout_marginStart="15dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:cursorVisible="true"
+            android:hint="@string/add_alarm"
+            android:textSize="16sp"
+            android:gravity="top|left"
+            android:textColor="@android:color/black"
+            android:scrollHorizontally="false"
+            android:textColorHint="@color/editText_hint"
+            android:layout_marginEnd="16dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:onClick="selectTime"
+                android:id="@+id/time"
+                android:background="@color/primary"
+                android:layout_height="102dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@color/mdtp_white"
+                    android:layout_height="30dp" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/starred1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="selectFab1"
+                    fab:fab_icon="@drawable/ic_notifications_off_grey600_24dp"
+                    fab:fab_colorNormal="@color/accent"
+                    fab:fab_colorPressed="@color/fab_pressed"
+                    app:fab_size="normal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="168dp"
+                    android:layout_marginBottom="30dip"
+                    android:layout_marginEnd="8dp"/>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/starred2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="selectFab2"
+                    fab:fab_icon="@drawable/ic_notifications_on_white_24dp"
+                    fab:fab_colorNormal="@color/primary"
+                    fab:fab_colorPressed="@color/primary"
+                    app:fab_size="normal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="168dp"
+                    android:layout_marginBottom="30dip"
+                    android:layout_marginEnd="8dp"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/time_text"
+                        android:textColor="@color/mdtp_white"
+                        android:layout_width="match_parent"
+                        android:textSize="16sp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="70dp"
+                        android:onClick="selectTime"
+                        android:layout_height="match_parent"
+                        android:text="@string/time" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

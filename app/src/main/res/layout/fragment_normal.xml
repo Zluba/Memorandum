@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#e0000000">
+
+
+    <RelativeLayout
+        android:layout_width="300dip"
+        android:background="@color/primary"
+        android:layout_centerInParent="true"
+        android:layout_height="300dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="时间到"
+            android:layout_margin="30dip"
+            android:textColor="@color/background_alarm_white"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:id="@+id/textView3" />
+
+        <Button
+            android:id="@+id/btn_stopAlarm_normal"
+            android:text="   O K   "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

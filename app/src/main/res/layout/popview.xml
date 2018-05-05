@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@color/mdtp_white"
+    >
+
+
+    <TextView
+        android:id="@+id/on_top_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="选择置顶"
+        android:textColor="@color/mdtp_transparent_black"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/primary"/>
+
+    <TextView
+        android:id="@+id/cancel_top_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="删除"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

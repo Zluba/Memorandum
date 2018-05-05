@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoshu.memorandum">
+
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AlarmTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivityP"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme ="@style/update_status_style">
+        </activity>
+        <activity
+            android:name=".activity.NoteActivity"
+            android:label="@string/title_activity_add_alarm"></activity>
+
+        <receiver android:name=".utils.MyAlarmReceiver" />
+
+        <receiver android:name=".utils.SnoozeReceiver"/>
+
+        <activity
+            android:name=".activity.PlayNoteActivity"
+            android:launchMode="singleTask" />
+
+        <activity android:name=".activity.AboutActivity" />
+
+        <service android:name=".utils.AlarmService" />
+
+        <receiver android:name=".utils.AlarmService$RebootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
